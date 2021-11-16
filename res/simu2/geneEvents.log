@@ -1,0 +1,28 @@
+Arguments: {'ancGenesFile': 'MagSimus/data/ancGenes.%s.list.bz2', 'phylTree.conf': 'MagSimus/data/speciesTree.phylTree', 'genesFile': 'MagSimus/data/genesST.%s.list.bz2'}
+Loading phylogenetic tree MagSimus/data/speciesTree.phylTree ... Data analysis ......... OK
+Loading genome of MagSimus/data/genesST.Monodelphis.domestica.list.bz2 ... (Ensembl) OK
+Loading genome of MagSimus/data/genesST.Homo.sapiens.list.bz2 ... (Ensembl) OK
+Loading genome of MagSimus/data/genesST.Canis.lupus.familiaris.list.bz2 ... (Ensembl) OK
+Loading genome of MagSimus/data/genesST.Mus.musculus.list.bz2 ... (Ensembl) OK
+Loading genome of MagSimus/data/genesST.Gallus.gallus.list.bz2 ... (Ensembl) OK
+Loading genome of MagSimus/data/ancGenes.Boreoeutheria.list.bz2 ... (ancestral genes) OK
+Loading genome of MagSimus/data/ancGenes.Euarchontoglires.list.bz2 ... (ancestral genes) OK
+Loading genome of MagSimus/data/ancGenes.Amniota.list.bz2 ... (ancestral genes) OK
+Loading genome of MagSimus/data/ancGenes.Theria.list.bz2 ... (ancestral genes) OK
+ini Amniota: 20169
+Amniota -> Gallus gallus: 20169 genes -> 14468 genes : 13621 herited (dup included), 7150 deleted, 847 appeared
+602 Duplications (initial gene excluded) 
+Amniota -> Theria: 20169 genes -> 20748 genes : 19853 herited (dup included), 1493 deleted, 895 appeared
+1177 Duplications (initial gene excluded) 
+Theria -> Monodelphis domestica: 20748 genes -> 21314 genes : 20286 herited (dup included), 4360 deleted, 1028 appeared
+3898 Duplications (initial gene excluded) 
+Theria -> Boreoeutheria: 20748 genes -> 23317 genes : 22045 herited (dup included), 812 deleted, 1272 appeared
+2109 Duplications (initial gene excluded) 
+Boreoeutheria -> Canis lupus familiaris: 23317 genes -> 19574 genes : 18931 herited (dup included), 5723 deleted, 643 appeared
+1337 Duplications (initial gene excluded) 
+Boreoeutheria -> Euarchontoglires: 23317 genes -> 22590 genes : 22459 herited (dup included), 1224 deleted, 131 appeared
+366 Duplications (initial gene excluded) 
+Euarchontoglires -> Homo sapiens: 22590 genes -> 19667 genes : 19224 herited (dup included), 4701 deleted, 443 appeared
+1335 Duplications (initial gene excluded) 
+Euarchontoglires -> Mus musculus: 22590 genes -> 21976 genes : 20763 herited (dup included), 4813 deleted, 1213 appeared
+2986 Duplications (initial gene excluded) 

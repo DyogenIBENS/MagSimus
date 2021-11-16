@@ -1,0 +1,16 @@
+chrFusion	Euarchontoglires	Homo sapiens	0
+chrFission	Euarchontoglires	Homo sapiens	0.0111
+chrInvert	Euarchontoglires	Homo sapiens	0.7478
+chrTransloc	Euarchontoglires	Homo sapiens	0.0038
+geneLoss	Euarchontoglires	Homo sapiens	53.0444
+geneBirth	Euarchontoglires	Homo sapiens	4.7111
+geneDup	Euarchontoglires	Homo sapiens	13.5556
+geneTandemDupProp	Euarchontoglires	Homo sapiens	0.7984
+chrFusion	Euarchontoglires	Mus musculus	0.0222
+chrFission	Euarchontoglires	Mus musculus	0
+chrInvert	Euarchontoglires	Mus musculus	0.6759
+chrTransloc	Euarchontoglires	Mus musculus	0.5813
+geneLoss	Euarchontoglires	Mus musculus	54.1778
+geneBirth	Euarchontoglires	Mus musculus	13.4667
+geneDup	Euarchontoglires	Mus musculus	30.9556
+geneTandemDupProp	Euarchontoglires	Mus musculus	0.8220

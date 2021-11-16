@@ -1,0 +1,160 @@
+#!/bin/bash
+# -*- coding: utf-8 -*-
+
+function usage()
+{
+	echo "
+	usage: $0 [options] MainPathToData PathToAncGenes speciescCombi MainPathToResults
+
+	Script that computes species1_vs_Species2.sbs 
+	OPTIONS:
+	-h  Show this message
+	-f	filter type, either \"InCommonAncestor\", \"InBothSpecies\" or \"None\"
+	-t  tandem gap max (default = 0)
+	-g  gap Max (default 0)
+	-d	distance Metric (either CD, MD, DPD or ED)
+	-r  \"real\" or \"simu\", means that the script will extract sbs either in \"real\" or \"simu\"
+	" >&2
+}
+
+phylDiag="/kingdoms/dyogen/workspace4/workspace4/jlucas/Libs/PhylDiag/src/phylDiag.py"
+if [ ! -e $phylDiag ]; then
+	echo "ERROR : there is no file $phylDiag " >&2
+fi
+cleanCOND="/kingdoms/dyogen/workspace4/workspace4/jlucas/Libs/Scripts/condor-clean.py"
+if [ ! -e $cleanCOND ]; then
+	echo "ERROR : there is no file $cleanCOND " >&2
+fi
+
+# default values
+gapMax=0
+tandemGapMax=0
+DM="CD"
+realOrSimu="real"
+filterType="InCommonAncestor"
+
+while getopts ":hf:t:g:d:r:" OPTION
+# the ":" at the beginning activates the detection of options that need arguments
+# the ":" after "f" signals that "f" needs arguments
+do
+	case $OPTION in
+		\:) echo "Option $OPTARG requires an argument." >&2
+			  exit
+			  ;;
+    \?) echo "Error, wrong usage of options" >&2
+	    	exit
+		    ;;
+    h)  usage
+	   	  exit
+		    ;;
+		f) filterType="$OPTARG"
+			 ;;
+    t) tandemGapMax="$OPTARG"
+	     ;;
+    g) gapMax="$OPTARG"
+	     ;;
+    d) DM="$OPTARG"
+	  	 ;;
+		r) realOrSimu="$OPTARG"
+  esac
+done
+
+#printf "Remaining arguments are: %s\n" "$*"
+shift $(($OPTIND -1))
+
+if [ $# -ne 4 ]; then
+	echo "Wrong number of arguments" >&2
+	exit
+fi
+
+if [ ! -d $1 ] || [ ! -d $2 ] || [ ! -e $3 ] || [ ! -d $4 ]
+then
+	if [ ! -d $1 ]; then
+		echo "ERROR : there is no folder $1 " >&2
+	fi
+	if [ ! -d $2 ]; then
+		echo "ERROR : there is no folder $2 " >&2
+	fi
+	if [ ! -e $3 ]; then
+		echo "ERROR : there is no file $3 " >&2
+	fi
+	if [ ! -d $4 ]; then
+		echo "ERROR : there is no folder $4 " >&2
+	fi
+fi
+
+if [ "${filterType}" == "InCommonAncestor" ]
+then
+	fM="Ica"
+elif [ "${filterType}" == "InBothSpecies" ]
+then
+	fM="IbS"
+elif
+	[ "${filterType}" == "None" ]
+then
+	fM="None"
+else
+	echo 'ERROR: The option -f should be either "InCommonAncestor", "InBothSpecies" or "None"' >&2
+fi
+
+MainPathToData=$1 #/workspace2/alouis/GENOMICUS_SVN/data65/genes/ with genesST.%s.list.bz2 inside
+PathToAncGenes=$2 #/workspace2/alouis/GENOMICUS_SVN/data65/trees/0.30/ancGenes/all with ancGenes.lis.bz2 inside
+speciesCombi=$3 #Tmp/species_combi.txt
+MainPathToResults=$4 #Analyse/Diags/Real_vs_Real/Data65
+
+mkdir -p ${MainPathToResults}
+
+extractSbs () {
+	while IFS='	' read -r S1 S2 CA
+	do
+		scriptPairComp="${PathToRes}/${realOrSimu}ExtractSbs_${S1}_${S2}.sh"
+		echo "#!/bin/bash" > ${scriptPairComp}
+		echo "echo \"Extract synteny blocks of ${S1} vs ${S2}\"" >> ${scriptPairComp}
+		sbsFileName=${S1}-${S2}_${fM}${CA}_Tgm${tandemGapMax}Gm${gapMax}${DM}
+		echo "python2.7 ${phylDiag} ${PathToData}/${genes}.${S1}.list.bz2 ${PathToData}/${genes}.${S2}.list.bz2 ${PathToAncGenes}/ancGenes.${CA}.list.bz2 -filterType=${filterType} -minChromLength=2 -tandemGapMax=${tandemGapMax} -gapMax=${gapMax} -distanceMetric=${DM} -verbose -multiProcess > ${PathToRes}/${realOrSimu}_${sbsFileName}.sbs 2> ${PathToRes}/${realOrSimu}_${sbsFileName}.sbs.log" >> ${scriptPairComp}
+	chmod +x ${scriptPairComp}
+	condor-submit.sh ${scriptPairComp} / ${scriptPairComp}.logStd // ${scriptPairComp}.logErr  /// ${scriptPairComp}.logCondor = 
+	done < ${speciesCombi}
+	IFS=$' \t\n'
+	}
+
+CONDFileName='None'
+if [ "${realOrSimu}" == "real" ]
+then
+	genes="genesST"
+	CONDFileName="${realOrSimu}ExtractSbs_COND"
+	PathToData="${MainPathToData}"
+	PathToRes="${MainPathToResults}"
+	# Call the function "ectractSbs" with no parameter
+	extractSbs
+elif [ "${realOrSimu}" == "simu" ]
+then
+	genes="genes"
+	CONDFileName="${realOrSimu}ExtractSbs_COND"
+	for i in `seq 0 99`
+	do
+		PathToData="${MainPathToData}/${i}"
+		PathToRes="${MainPathToResults}/${i}"
+		# Call the function "ectractSbs" with no parameter
+	  extractSbs
+	done 
+else 
+	echo 'ERROR: The option -r should be either "real" or "simu"'>&2
+fi | ${cleanCOND} > ${MainPathToResults}/${CONDFileName}
+condor_submit ${MainPathToResults}/${CONDFileName}
+
+
+#Others ways to read speciesCombi file
+#1
+#for line in $(cat ${speciesCombi})
+#do
+#	echo "$ line"
+#done
+#2
+#nawk -v PathToGenesSTCH=$PathToGenesSTCH -v PathToAncGenes=$PathToAncGenes -v speciesCombi=$speciesCombi -v MainPathToResults=$MainPathToResults 'NF>0{print "echo -e Compute diags "$1" vs "$2"","\n", "misc.conservedBlocks_correctionDiags.py "PathToGenesSTCH"/genesSTCH."$1".list.bz2 "PathToGenesSTCH"/genesSTCH."$2".list.bz2 "PathToAncGenes"/ancGenes."$3".list.bz2 -orthosFilter=InCommonAncestor -minimalLength=1 -fusionThreshold=2 > "MainPathToResults"/"$1"_vs_"$2"_sglt.diags 2> "MainPathToResults"/"$1"_vs_"$2"_sglt.log"}' $speciesCombi > $MainPathToResults/compute_diags_sglt.sh
+#declare -a arr
+#while read -r line; do
+#	    arr=(${line//,/ })
+#			    printf "Rank\t: %s\nName\t: %s\nSchool\t: %s\nMajor\t: %s\nYear\t: %s\n" ${arr[@]}
+#done < file.csv
+

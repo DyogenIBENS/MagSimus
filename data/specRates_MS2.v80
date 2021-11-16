@@ -1,0 +1,40 @@
+chrFusion	Amniota	Gallus gallus	0
+chrFission	Amniota	Gallus gallus	0
+chrInvert	Amniota	Gallus gallus	0.4534
+chrTransloc	Amniota	Gallus gallus	0
+geneTandemDupProp	Amniota	Gallus gallus	0.6508
+chrFusion	Amniota	Theria	0.031
+chrFission	Amniota	Theria	0
+chrInvert	Amniota	Theria	0.4534
+chrTransloc	Amniota	Theria	0
+geneTandemDupProp	Amniota	Theria	0.6517
+chrFusion	Theria	Monodelphis domestica	0.0904
+chrFission	Theria	Monodelphis domestica	0
+chrInvert	Theria	Monodelphis domestica	0.9472
+chrTransloc	Theria	Monodelphis domestica	0.146
+geneTandemDupProp	Theria	Monodelphis domestica	0.4426
+chrFusion	Theria	Boreoeutheria	0
+chrFission	Theria	Boreoeutheria	0
+chrInvert	Theria	Boreoeutheria	0.7011
+chrTransloc	Theria	Boreoeutheria	0.3545
+geneTandemDupProp	Theria	Boreoeutheria	0.6136
+chrFusion	Boreoeutheria	Canis lupus familiaris	0
+chrFission	Boreoeutheria	Canis lupus familiaris	0.1579
+chrInvert	Boreoeutheria	Canis lupus familiaris	0.2837
+chrTransloc	Boreoeutheria	Canis lupus familiaris	0.3193
+geneTandemDupProp	Boreoeutheria	Canis lupus familiaris	0.3475
+chrFusion	Boreoeutheria	Euarchontoglires	0.4
+chrFission	Boreoeutheria	Euarchontoglires	0
+chrInvert	Boreoeutheria	Euarchontoglires	0.5819
+chrTransloc	Boreoeutheria	Euarchontoglires	0
+geneTandemDupProp	Boreoeutheria	Euarchontoglires	0.5410
+chrFusion	Euarchontoglires	Homo sapiens	0
+chrFission	Euarchontoglires	Homo sapiens	0.0111
+chrInvert	Euarchontoglires	Homo sapiens	0.7478
+chrTransloc	Euarchontoglires	Homo sapiens	0.0038
+geneTandemDupProp	Euarchontoglires	Homo sapiens	0.7984
+chrFusion	Euarchontoglires	Mus musculus	0.0222
+chrFission	Euarchontoglires	Mus musculus	0
+chrInvert	Euarchontoglires	Mus musculus	0.6759
+chrTransloc	Euarchontoglires	Mus musculus	0.5813
+geneTandemDupProp	Euarchontoglires	Mus musculus	0.8220

@@ -1,0 +1,11 @@
+Arguments: {'phylTree.conf': 'MagSimus/data/speciesTree.phylTree', 'geneEvents': 'MagSimus/res/newSim2/geneEvents.txt'}
+Loading phylogenetic tree MagSimus/data/speciesTree.phylTree ... Data analysis ......... OK
+ini Amniota contains 20169 gene names
+Amniota -> Gallus gallus: 13019=>13621 -7150 +847
+Amniota -> Theria: 18676=>19853 -1493 +895
+Theria -> Monodelphis domestica: 16388=>20286 -4360 +1028
+Theria -> Boreoeutheria: 19936=>22045 -812 +1272
+Boreoeutheria -> Canis lupus familiaris: 17594=>18931 -5723 +643
+Boreoeutheria -> Euarchontoglires: 22093=>22459 -1224 +131
+Euarchontoglires -> Homo sapiens: 17889=>19224 -4701 +443
+Euarchontoglires -> Mus musculus: 17777=>20763 -4813 +1213

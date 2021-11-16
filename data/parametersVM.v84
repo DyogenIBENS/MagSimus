@@ -1,0 +1,18 @@
+globalFactor	1.0
+startChrSizes	(2903, 1706, 1409, 1268, 1138, 969, 941, 933, 916, 886, 869, 793, 764, 728, 667, 618, 544, 489, 431, 304, 271)
+chrInvert	1.0
+chrTransloc	1.0
+chrFusion	1.0
+chrFission	1.0
+chr:absOrRelChoiceOfInvLength	absolute
+chr:invDist	vonmises
+chr:invDistMean	0.05
+chr:invDistShape	3.0
+chr:maxLengthOfInvertedSegments	1330
+gene:clusteredGenesRatio	0.99
+forceClustering	True
+b_randomAccel	False
+printIntermGenomes	False
+rate:eventMaxRandomFactor	1.5
+rate:eventRandomVonMisesKappa	2.0
+breakpointAnalyzer	True

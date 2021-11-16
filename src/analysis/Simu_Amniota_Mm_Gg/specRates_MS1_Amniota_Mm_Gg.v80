@@ -1,0 +1,16 @@
+chrFusion	Amniota	Gallus gallus	0
+chrFission	Amniota	Gallus gallus	0
+chrInvert	Amniota	Gallus gallus	0.4534
+chrTransloc	Amniota	Gallus gallus	0
+geneLoss	Amniota	Gallus gallus	22.2883
+geneBirth	Amniota	Gallus gallus	2.5859
+geneDup	Amniota	Gallus gallus	1.8098
+geneTandemDupProp	Amniota	Gallus gallus	0.6508
+chrFusion	Amniota	Mus musculus	0.02747
+chrFission	Amniota	Mus musculus	0
+chrInvert	Amniota	Mus musculus	0.5707
+chrTransloc	Amniota	Mus musculus	0.2377
+geneLoss	Amniota	Mus musculus	26.0062
+geneBirth	Amniota	Mus musculus	11.0153
+geneDup	Amniota	Mus musculus	19.8742
+geneTandemDupProp	Amniota	Mus musculus	0.60

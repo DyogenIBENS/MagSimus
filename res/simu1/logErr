@@ -1,0 +1,134 @@
+WARNING - Usage of parameterFile: options in command line are overwritten by values in parameterFile
+Loading parameters from C:/cygwin64/home/Luc/Libs/Opt12/0/parameters.v80-0 
+OrderedDict([('speciesTree.phylTree', 'C:/cygwin64/home/Luc/Libs/Opt12/realData/speciesTree.phylTree'), ('parameterFile', 'C:/cygwin64/home/Luc/Libs/Opt12/0/parameters.v80-0'), ('userRatesFile', 'C:/cygwin64/home/Luc/Libs/Opt12/0/specRates_MS1.v80-0'), ('globalFactor', 1.0), ('startChrSizes', (2828.0, 1857.0, 1639.0, 1503.0, 1293.0, 1072.0, 731.0, 716.0, 689.0, 616.0, 580.0, 568.0, 512.0, 494.0, 487.0, 480.0, 479.0, 453.0, 436.0, 403.0, 356.0, 355.0, 351.0, 348.0, 312.0, 255.0, 241.0, 173.0, 65.0)), ('chrInvert', 1.0), ('chrTransloc', 1.0), ('chrFusion', 1.0), ('chrFission', 1.0), ('geneLoss', 1.0), ('geneBirth', 1.0), ('geneDup', 1.0), ('geneTandemDupProp', 1.0), ('chr:fissionSamplingAlgo', 'simpleRandomSampling'), ('chr:fusionSamplingAlgo', 'simpleRandomSampling'), ('chr:inversionSamplingAlgo', 'simpleRandomSampling'), ('chr:translocSamplingAlgo', 'simpleRandomSampling'), ('chr:sizeLowerCap', 1), ('chr:sizeUpperCap', 2147483647), ('chr:invertVonMisesMean', 0.01), ('chr:invertVonMisesKappa', 3.0), ('geneClusteredRatio', 0.99), ('forceClustering', True), ('seed', ''), ('b_randomAccel', False), ('rate:eventMaxRandomFactor', 1.5), ('rate:eventRandomVonMisesKappa', 2.0), ('printIntermGenomes', False), ('out:genomeFiles', 'C:/cygwin64/home/Luc/Libs/Opt12/0/1/genes.%s.list.bz2'), ('out:ancGenesFiles', 'C:/cygwin64/home/Luc/Libs/Opt12/0/1/ancGenes.%s.list.bz2'), ('in:firstAncestralGenome', None), ('lazyBreakpointAnalyzer', True), ('out:empiricalSbsAsGenomes', 'sbs.genes.%s.%s.list.bz2')])
+Loading branch specific parameters from C:/cygwin64/home/Luc/Libs/Opt12/0/specRates_MS1.v80-0
+############################################
+# Branch Amniota -> Gallus gallus (326 My) #
+############################################
+Progress: 1%   Progress: 2%   Progress: 3%   Progress: 4%   Progress: 5%   Progress: 6%   Progress: 7%   Progress: 8%   Progress: 9%   Progress: 10%   Progress: 11%   Progress: 12%   Progress: 13%   Progress: 14%   Progress: 15%   Progress: 16%   Progress: 17%   Progress: 18%   Progress: 19%   Progress: 20%   Progress: 21%   Progress: 22%   Progress: 23%   Progress: 24%   Progress: 25%   Progress: 26%   Progress: 27%   Progress: 28%   Progress: 29%   Progress: 30%   Progress: 31%   Progress: 32%   Progress: 33%   Progress: 34%   Progress: 35%   Progress: 36%   Progress: 37%   Progress: 38%   Progress: 39%   Progress: 40%   Progress: 41%   Progress: 42%   Progress: 43%   Progress: 44%   Progress: 45%   Progress: 46%   Progress: 47%   Progress: 48%   Progress: 49%   Progress: 50%   Progress: 51%   Progress: 52%   Progress: 53%   Progress: 54%   Progress: 55%   Progress: 56%   Progress: 57%   Progress: 58%   Progress: 59%   Progress: 60%   Progress: 61%   Progress: 62%   Progress: 63%   Progress: 64%   Progress: 65%   Progress: 66%   Progress: 67%   Progress: 68%   Progress: 69%   Progress: 70%   Progress: 71%   Progress: 72%   Progress: 73%   Progress: 74%   Progress: 75%   Progress: 76%   Progress: 77%   Progress: 78%   Progress: 79%   Progress: 80%   Progress: 81%   Progress: 82%   Progress: 83%   Progress: 84%   Progress: 85%   Progress: 86%   Progress: 87%   Progress: 88%   Progress: 89%   Progress: 90%   Progress: 91%   Progress: 92%   Progress: 93%   Progress: 94%   Progress: 95%   Progress: 96%   Progress: 97%   Progress: 98%   Progress: 99%   Progress: 100%   #geneBirth      = 843     rate = 2.59   randomFactor = 1.00  
+#geneDup        = 590     rate = 1.81   randomFactor = 1.00  
+#geneLoss       = 7266    rate = 22.29  randomFactor = 1.00  
+#chrInvert      = 148     rate = 0.45   randomFactor = 1.00  
+#chrTransloc    = 0       rate = 0.00   randomFactor = 1.00  
+#chrFusion      = 0       rate = 0.00   randomFactor = 1.00  
+#chrFission     = 0       rate = 0.00   randomFactor = 1.00  
+#propTandemDup  = 66.95%                                     
+#chromosomes    = 29                                         
+#genes          = 14459                                      
+chrom lengths = [46, 124, 159, 197, 215, 243, 245, 247, 247, 303, 314, 319, 321, 339, 342, 353, 375, 401, 413, 441, 475, 495, 504, 767, 928, 1058, 1188, 1372, 2028]
+Writing Gallus gallus genome ... OK
+Writing Gallus gallus families ... OK
+#####################################
+# Branch Amniota -> Theria (160 My) #
+#####################################
+Progress: 1%   Progress: 2%   Progress: 3%   Progress: 4%   Progress: 5%   Progress: 6%   Progress: 7%   Progress: 8%   Progress: 9%   Progress: 10%   Progress: 11%   Progress: 12%   Progress: 13%   Progress: 14%   Progress: 15%   Progress: 16%   Progress: 17%   Progress: 18%   Progress: 19%   Progress: 20%   Progress: 21%   Progress: 22%   Progress: 23%   Progress: 24%   Progress: 25%   Progress: 26%   Progress: 27%   Progress: 28%   Progress: 29%   Progress: 30%   Progress: 31%   Progress: 32%   Progress: 33%   Progress: 34%   Progress: 35%   Progress: 36%   Progress: 37%   Progress: 38%   Progress: 39%   Progress: 40%   Progress: 41%   Progress: 42%   Progress: 43%   Progress: 44%   Progress: 45%   Progress: 46%   Progress: 47%   Progress: 48%   Progress: 49%   Progress: 50%   Progress: 51%   Progress: 52%   Progress: 53%   Progress: 54%   Progress: 55%   Progress: 56%   Progress: 57%   Progress: 58%   Progress: 59%   Progress: 60%   Progress: 61%   Progress: 62%   Progress: 63%   Progress: 64%   Progress: 65%   Progress: 66%   Progress: 67%   Progress: 68%   Progress: 69%   Progress: 70%   Progress: 71%   Progress: 72%   Progress: 73%   Progress: 74%   Progress: 75%   Progress: 76%   Progress: 77%   Progress: 78%   Progress: 79%   Progress: 80%   Progress: 81%   Progress: 82%   Progress: 83%   Progress: 84%   Progress: 85%   Progress: 86%   Progress: 87%   Progress: 88%   Progress: 89%   Progress: 90%   Progress: 91%   Progress: 92%   Progress: 93%   Progress: 94%   Progress: 95%   Progress: 96%   Progress: 97%   Progress: 98%   Progress: 99%   Progress: 100%   #geneBirth      = 856     rate = 5.35  randomFactor = 1.00  
+#geneDup        = 1191    rate = 7.44  randomFactor = 1.00  
+#geneLoss       = 1556    rate = 9.72  randomFactor = 1.00  
+#chrInvert      = 73      rate = 0.46  randomFactor = 1.00  
+#chrTransloc    = 0       rate = 0.00  randomFactor = 1.00  
+#chrFusion      = 5       rate = 0.03  randomFactor = 1.00  
+#chrFission     = 0       rate = 0.00  randomFactor = 1.00  
+#propTandemDup  = 64.23%                                    
+#chromosomes    = 24                                        
+#genes          = 20783                                     
+chrom lengths = [69, 174, 255, 332, 352, 353, 362, 368, 454, 483, 502, 512, 519, 634, 708, 720, 732, 1093, 1156, 1329, 1652, 1666, 2904, 3454]
+###################################################
+# Branch Theria -> Monodelphis domestica (166 My) #
+###################################################
+Progress: 1%   Progress: 2%   Progress: 3%   Progress: 4%   Progress: 5%   Progress: 6%   Progress: 7%   Progress: 8%   Progress: 9%   Progress: 10%   Progress: 11%   Progress: 12%   Progress: 13%   Progress: 14%   Progress: 15%   Progress: 16%   Progress: 17%   Progress: 18%   Progress: 19%   Progress: 20%   Progress: 21%   Progress: 22%   Progress: 23%   Progress: 24%   Progress: 25%   Progress: 26%   Progress: 27%   Progress: 28%   Progress: 29%   Progress: 30%   Progress: 31%   Progress: 32%   Progress: 33%   Progress: 34%   Progress: 35%   Progress: 36%   Progress: 37%   Progress: 38%   Progress: 39%   Progress: 40%   Progress: 41%   Progress: 42%   Progress: 43%   Progress: 44%   Progress: 45%   Progress: 46%   Progress: 47%   Progress: 48%   Progress: 49%   Progress: 50%   Progress: 51%   Progress: 52%   Progress: 53%   Progress: 54%   Progress: 55%   Progress: 56%   Progress: 57%   Progress: 58%   Progress: 59%   Progress: 60%   Progress: 61%   Progress: 62%   Progress: 63%   Progress: 64%   Progress: 65%   Progress: 66%   Progress: 67%   Progress: 68%   Progress: 69%   Progress: 70%   Progress: 71%   Progress: 72%   Progress: 73%   Progress: 74%   Progress: 75%   Progress: 76%   Progress: 77%   Progress: 78%   Progress: 79%   Progress: 80%   Progress: 81%   Progress: 82%   Progress: 83%   Progress: 84%   Progress: 85%   Progress: 86%   Progress: 87%   Progress: 88%   Progress: 89%   Progress: 90%   Progress: 91%   Progress: 92%   Progress: 93%   Progress: 94%   Progress: 95%   Progress: 96%   Progress: 97%   Progress: 98%   Progress: 99%   Progress: 100%   #geneBirth      = 925     rate = 5.57   randomFactor = 1.00  
+#geneDup        = 3482    rate = 20.98  randomFactor = 1.00  
+#geneLoss       = 4950    rate = 29.82  randomFactor = 1.00  
+#chrInvert      = 157     rate = 0.95   randomFactor = 1.00  
+#chrTransloc    = 24      rate = 0.14   randomFactor = 1.00  
+#chrFusion      = 15      rate = 0.09   randomFactor = 1.00  
+#chrFission     = 0       rate = 0.00   randomFactor = 1.00  
+#propTandemDup  = 44.74%                                     
+#chromosomes    = 9                                          
+#genes          = 20240                                      
+chrom lengths = [350, 1203, 1276, 1376, 2023, 2122, 3523, 3644, 4723]
+Writing Monodelphis domestica genome ... OK
+Writing Monodelphis domestica families ... OK
+##########################################
+# Branch Theria -> Boreoeutheria (71 My) #
+##########################################
+Progress: 1%   Progress: 2%   Progress: 3%   Progress: 4%   Progress: 5%   Progress: 6%   Progress: 7%   Progress: 8%   Progress: 9%   Progress: 10%   Progress: 11%   Progress: 12%   Progress: 13%   Progress: 14%   Progress: 15%   Progress: 16%   Progress: 17%   Progress: 18%   Progress: 19%   Progress: 20%   Progress: 21%   Progress: 22%   Progress: 23%   Progress: 24%   Progress: 25%   Progress: 26%   Progress: 27%   Progress: 28%   Progress: 29%   Progress: 30%   Progress: 31%   Progress: 32%   Progress: 33%   Progress: 34%   Progress: 35%   Progress: 36%   Progress: 37%   Progress: 38%   Progress: 39%   Progress: 40%   Progress: 41%   Progress: 42%   Progress: 43%   Progress: 44%   Progress: 45%   Progress: 46%   Progress: 47%   Progress: 48%   Progress: 49%   Progress: 50%   Progress: 51%   Progress: 52%   Progress: 53%   Progress: 54%   Progress: 55%   Progress: 56%   Progress: 57%   Progress: 58%   Progress: 59%   Progress: 60%   Progress: 61%   Progress: 62%   Progress: 63%   Progress: 64%   Progress: 65%   Progress: 66%   Progress: 67%   Progress: 68%   Progress: 69%   Progress: 70%   Progress: 71%   Progress: 72%   Progress: 73%   Progress: 74%   Progress: 75%   Progress: 76%   Progress: 77%   Progress: 78%   Progress: 79%   Progress: 80%   Progress: 81%   Progress: 82%   Progress: 83%   Progress: 84%   Progress: 85%   Progress: 86%   Progress: 87%   Progress: 88%   Progress: 89%   Progress: 90%   Progress: 91%   Progress: 92%   Progress: 93%   Progress: 94%   Progress: 95%   Progress: 96%   Progress: 97%   Progress: 98%   Progress: 99%   Progress: 100%   #geneBirth      = 1303    rate = 18.35  randomFactor = 1.00  
+#geneDup        = 2133    rate = 30.04  randomFactor = 1.00  
+#geneLoss       = 774     rate = 10.90  randomFactor = 1.00  
+#chrInvert      = 50      rate = 0.70   randomFactor = 1.00  
+#chrTransloc    = 25      rate = 0.35   randomFactor = 1.00  
+#chrFusion      = 0       rate = 0.00   randomFactor = 1.00  
+#chrFission     = 0       rate = 0.00   randomFactor = 1.00  
+#propTandemDup  = 61.18%                                     
+#chromosomes    = 24                                         
+#genes          = 23445                                      
+chrom lengths = [194, 233, 321, 359, 387, 407, 454, 614, 666, 691, 723, 741, 803, 849, 850, 1033, 1153, 1215, 1287, 1404, 1593, 1899, 2186, 3383]
+##########################################################
+# Branch Boreoeutheria -> Canis lupus familiaris (95 My) #
+##########################################################
+Progress: 1%   Progress: 2%   Progress: 3%   Progress: 4%   Progress: 5%   Progress: 6%   Progress: 7%   Progress: 8%   Progress: 9%   Progress: 10%   Progress: 11%   Progress: 12%   Progress: 13%   Progress: 14%   Progress: 15%   Progress: 16%   Progress: 17%   Progress: 18%   Progress: 19%   Progress: 20%   Progress: 21%   Progress: 22%   Progress: 23%   Progress: 24%   Progress: 25%   Progress: 26%   Progress: 27%   Progress: 28%   Progress: 29%   Progress: 30%   Progress: 31%   Progress: 32%   Progress: 33%   Progress: 34%   Progress: 35%   Progress: 36%   Progress: 37%   Progress: 38%   Progress: 39%   Progress: 40%   Progress: 41%   Progress: 42%   Progress: 43%   Progress: 44%   Progress: 45%   Progress: 46%   Progress: 47%   Progress: 48%   Progress: 49%   Progress: 50%   Progress: 51%   Progress: 52%   Progress: 53%   Progress: 54%   Progress: 55%   Progress: 56%   Progress: 57%   Progress: 58%   Progress: 59%   Progress: 60%   Progress: 61%   Progress: 62%   Progress: 63%   Progress: 64%   Progress: 65%   Progress: 66%   Progress: 67%   Progress: 68%   Progress: 69%   Progress: 70%   Progress: 71%   Progress: 72%   Progress: 73%   Progress: 74%   Progress: 75%   Progress: 76%   Progress: 77%   Progress: 78%   Progress: 79%   Progress: 80%   Progress: 81%   Progress: 82%   Progress: 83%   Progress: 84%   Progress: 85%   Progress: 86%   Progress: 87%   Progress: 88%   Progress: 89%   Progress: 90%   Progress: 91%   Progress: 92%   Progress: 93%   Progress: 94%   Progress: 95%   Progress: 96%   Progress: 97%   Progress: 98%   Progress: 99%   Progress: 100%   #geneBirth      = 644     rate = 6.78   randomFactor = 1.00  
+#geneDup        = 1338    rate = 14.08  randomFactor = 1.00  
+#geneLoss       = 5853    rate = 61.61  randomFactor = 1.00  
+#chrInvert      = 27      rate = 0.28   randomFactor = 1.00  
+#chrTransloc    = 30      rate = 0.32   randomFactor = 1.00  
+#chrFusion      = 0       rate = 0.00   randomFactor = 1.00  
+#chrFission     = 15      rate = 0.16   randomFactor = 1.00  
+#propTandemDup  = 35.72%                                     
+#chromosomes    = 39                                         
+#genes          = 19574                                      
+chrom lengths = [13, 19, 43, 48, 95, 98, 101, 112, 181, 183, 184, 185, 192, 233, 257, 273, 302, 303, 321, 406, 429, 448, 474, 498, 514, 526, 584, 684, 685, 804, 809, 829, 833, 915, 917, 1242, 1354, 1658, 1822]
+Writing Canis lupus familiaris genome ... OK
+Writing Canis lupus familiaris families ... OK
+###################################################
+# Branch Boreoeutheria -> Euarchontoglires (5 My) #
+###################################################
+Progress: 1%   Progress: 2%   Progress: 3%   Progress: 4%   Progress: 5%   Progress: 6%   Progress: 7%   Progress: 8%   Progress: 9%   Progress: 10%   Progress: 11%   Progress: 12%   Progress: 13%   Progress: 14%   Progress: 15%   Progress: 16%   Progress: 17%   Progress: 18%   Progress: 19%   Progress: 20%   Progress: 21%   Progress: 22%   Progress: 23%   Progress: 24%   Progress: 25%   Progress: 26%   Progress: 27%   Progress: 28%   Progress: 29%   Progress: 30%   Progress: 31%   Progress: 32%   Progress: 33%   Progress: 34%   Progress: 35%   Progress: 36%   Progress: 37%   Progress: 38%   Progress: 39%   Progress: 40%   Progress: 41%   Progress: 42%   Progress: 43%   Progress: 44%   Progress: 45%   Progress: 46%   Progress: 47%   Progress: 48%   Progress: 49%   Progress: 50%   Progress: 51%   Progress: 52%   Progress: 53%   Progress: 54%   Progress: 55%   Progress: 56%   Progress: 57%   Progress: 58%   Progress: 59%   Progress: 60%   Progress: 61%   Progress: 62%   Progress: 63%   Progress: 64%   Progress: 65%   Progress: 66%   Progress: 67%   Progress: 68%   Progress: 69%   Progress: 70%   Progress: 71%   Progress: 72%   Progress: 73%   Progress: 74%   Progress: 75%   Progress: 76%   Progress: 77%   Progress: 78%   Progress: 79%   Progress: 80%   Progress: 81%   Progress: 82%   Progress: 83%   Progress: 84%   Progress: 85%   Progress: 86%   Progress: 87%   Progress: 88%   Progress: 89%   Progress: 90%   Progress: 91%   Progress: 92%   Progress: 93%   Progress: 94%   Progress: 95%   Progress: 96%   Progress: 97%   Progress: 98%   Progress: 99%   Progress: 100%   #geneBirth      = 130     rate = 26.00   randomFactor = 1.00  
+#geneDup        = 369     rate = 73.80   randomFactor = 1.00  
+#geneLoss       = 1272    rate = 254.40  randomFactor = 1.00  
+#chrInvert      = 3       rate = 0.60    randomFactor = 1.00  
+#chrTransloc    = 0       rate = 0.00    randomFactor = 1.00  
+#chrFusion      = 2       rate = 0.40    randomFactor = 1.00  
+#chrFission     = 0       rate = 0.00    randomFactor = 1.00  
+#propTandemDup  = 54.20%                                      
+#chromosomes    = 22                                          
+#genes          = 22672                                       
+chrom lengths = [186, 227, 348, 374, 388, 442, 653, 656, 718, 775, 818, 832, 1009, 1018, 1119, 1155, 1235, 1361, 1562, 1816, 2708, 3272]
+###################################################
+# Branch Euarchontoglires -> Homo sapiens (90 My) #
+###################################################
+Progress: 1%   Progress: 2%   Progress: 3%   Progress: 4%   Progress: 5%   Progress: 6%   Progress: 7%   Progress: 8%   Progress: 9%   Progress: 10%   Progress: 11%   Progress: 12%   Progress: 13%   Progress: 14%   Progress: 15%   Progress: 16%   Progress: 17%   Progress: 18%   Progress: 19%   Progress: 20%   Progress: 21%   Progress: 22%   Progress: 23%   Progress: 24%   Progress: 25%   Progress: 26%   Progress: 27%   Progress: 28%   Progress: 29%   Progress: 30%   Progress: 31%   Progress: 32%   Progress: 33%   Progress: 34%   Progress: 35%   Progress: 36%   Progress: 37%   Progress: 38%   Progress: 39%   Progress: 40%   Progress: 41%   Progress: 42%   Progress: 43%   Progress: 44%   Progress: 45%   Progress: 46%   Progress: 47%   Progress: 48%   Progress: 49%   Progress: 50%   Progress: 51%   Progress: 52%   Progress: 53%   Progress: 54%   Progress: 55%   Progress: 56%   Progress: 57%   Progress: 58%   Progress: 59%   Progress: 60%   Progress: 61%   Progress: 62%   Progress: 63%   Progress: 64%   Progress: 65%   Progress: 66%   Progress: 67%   Progress: 68%   Progress: 69%   Progress: 70%   Progress: 71%   Progress: 72%   Progress: 73%   Progress: 74%   Progress: 75%   Progress: 76%   Progress: 77%   Progress: 78%   Progress: 79%   Progress: 80%   Progress: 81%   Progress: 82%   Progress: 83%   Progress: 84%   Progress: 85%   Progress: 86%   Progress: 87%   Progress: 88%   Progress: 89%   Progress: 90%   Progress: 91%   Progress: 92%   Progress: 93%   Progress: 94%   Progress: 95%   Progress: 96%   Progress: 97%   Progress: 98%   Progress: 99%   Progress: 100%   #geneBirth      = 424     rate = 4.71   randomFactor = 1.00  
+#geneDup        = 1220    rate = 13.56  randomFactor = 1.00  
+#geneLoss       = 4774    rate = 53.04  randomFactor = 1.00  
+#chrInvert      = 67      rate = 0.74   randomFactor = 1.00  
+#chrTransloc    = 0       rate = 0.00   randomFactor = 1.00  
+#chrFusion      = 0       rate = 0.00   randomFactor = 1.00  
+#chrFission     = 1       rate = 0.01   randomFactor = 1.00  
+#propTandemDup  = 80.90%                                     
+#chromosomes    = 23                                         
+#genes          = 19542                                      
+chrom lengths = [161, 199, 307, 322, 353, 392, 395, 490, 552, 555, 601, 680, 701, 734, 892, 948, 1010, 1085, 1179, 1342, 1546, 2326, 2772]
+Writing Homo sapiens genome ... OK
+Writing Homo sapiens families ... OK
+###################################################
+# Branch Euarchontoglires -> Mus musculus (90 My) #
+###################################################
+Progress: 1%   Progress: 2%   Progress: 3%   Progress: 4%   Progress: 5%   Progress: 6%   Progress: 7%   Progress: 8%   Progress: 9%   Progress: 10%   Progress: 11%   Progress: 12%   Progress: 13%   Progress: 14%   Progress: 15%   Progress: 16%   Progress: 17%   Progress: 18%   Progress: 19%   Progress: 20%   Progress: 21%   Progress: 22%   Progress: 23%   Progress: 24%   Progress: 25%   Progress: 26%   Progress: 27%   Progress: 28%   Progress: 29%   Progress: 30%   Progress: 31%   Progress: 32%   Progress: 33%   Progress: 34%   Progress: 35%   Progress: 36%   Progress: 37%   Progress: 38%   Progress: 39%   Progress: 40%   Progress: 41%   Progress: 42%   Progress: 43%   Progress: 44%   Progress: 45%   Progress: 46%   Progress: 47%   Progress: 48%   Progress: 49%   Progress: 50%   Progress: 51%   Progress: 52%   Progress: 53%   Progress: 54%   Progress: 55%   Progress: 56%   Progress: 57%   Progress: 58%   Progress: 59%   Progress: 60%   Progress: 61%   Progress: 62%   Progress: 63%   Progress: 64%   Progress: 65%   Progress: 66%   Progress: 67%   Progress: 68%   Progress: 69%   Progress: 70%   Progress: 71%   Progress: 72%   Progress: 73%   Progress: 74%   Progress: 75%   Progress: 76%   Progress: 77%   Progress: 78%   Progress: 79%   Progress: 80%   Progress: 81%   Progress: 82%   Progress: 83%   Progress: 84%   Progress: 85%   Progress: 86%   Progress: 87%   Progress: 88%   Progress: 89%   Progress: 90%   Progress: 91%   Progress: 92%   Progress: 93%   Progress: 94%   Progress: 95%   Progress: 96%   Progress: 97%   Progress: 98%   Progress: 99%   Progress: 100%   #geneBirth      = 1212    rate = 13.47  randomFactor = 1.00  
+#geneDup        = 2786    rate = 30.96  randomFactor = 1.00  
+#geneLoss       = 4876    rate = 54.18  randomFactor = 1.00  
+#chrInvert      = 61      rate = 0.68   randomFactor = 1.00  
+#chrTransloc    = 52      rate = 0.58   randomFactor = 1.00  
+#chrFusion      = 2       rate = 0.02   randomFactor = 1.00  
+#chrFission     = 0       rate = 0.00   randomFactor = 1.00  
+#propTandemDup  = 82.09%                                     
+#chromosomes    = 20                                         
+#genes          = 21794                                      
+chrom lengths = [124, 153, 208, 313, 477, 536, 626, 784, 839, 845, 847, 1209, 1341, 1351, 1612, 1785, 1851, 2258, 2276, 2359]
+Writing Mus musculus genome ... OK
+Writing Mus musculus families ... OK
+Writing Euarchontoglires genome ... OK
+Writing Euarchontoglires families ... OK
+Writing Boreoeutheria genome ... OK
+Writing Boreoeutheria families ... OK
+Writing Theria genome ... OK
+Writing Theria families ... OK
+Writing Amniota genome ... OK
+Writing Amniota families ... OK
