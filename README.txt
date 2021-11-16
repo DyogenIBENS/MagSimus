@@ -44,7 +44,7 @@ Download LibsDyogen and the PhylDiag projects that are used by magSimus scripts
 : chmod +x PhylDiag/src/*.py
 : git clone git@depot.biologie.ens.fr:MagSimus
 : chmod +x MagSimus/src/*.py
-: chmod +x MagSimus/src/analys/*.py
+: chmod +x MagSimus/src/analysis/*.py
 
 From now on we consider that the user is in the root directory of the project
 : cd ${INSTALLDIR}/MagSimus
