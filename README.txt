@@ -38,11 +38,10 @@ Define the folder that will contain all the project
 Download LibsDyogen and the PhylDiag projects that are used by magSimus scripts
 : mkdir ${INSTALLDIR}
 : cd ${INSTALLDIR}
-: git clone git@depot.biologie.ens.fr:LibsDyogen
+: git clone https://github.com/DyogenIBENS/LibsDyogen.git
 : echo "export PYTHONPATH=\"$PYTHONPATH:${INSTALLDIR}/LibsDyogen\"" >> ~/.bashrc
-: git clone git@depot.biologie.ens.fr:PhylDiag
+: git clone https://github.com/DyogenIBENS/PhylDiag.git
 : chmod +x PhylDiag/src/*.py
-: git clone git@depot.biologie.ens.fr:MagSimus
 : chmod +x MagSimus/src/*.py
 : chmod +x MagSimus/src/analysis/*.py
 
