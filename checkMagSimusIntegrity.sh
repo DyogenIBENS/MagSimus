@@ -29,7 +29,7 @@ NC='\e[0m' # No Color
 ##	Check integrity of magSimus1  					 #
 #############################################
 magSimus1CommandLines=(
-"src/magSimus1.py res/speciesTree.phylTree -out:genomeFiles=res/simu1/genes.%s.list.bz2 -out:ancGenesFiles=res/simu1/ancGenes.%s.list.bz2 -parameterFile=data/parametersG_ABC.v83 -userRatesFile=data/specRates_MS1.v84 > res/simu1/logStd"
+"src/magSimus1.py data/speciesTree.phylTree -out:genomeFiles=res/simu1/genes.%s.list.bz2 -out:ancGenesFiles=res/simu1/ancGenes.%s.list.bz2 -parameterFile=data/parametersG_ABC.v83 -userRatesFile=data/specRates_MS1.v84 > res/simu1/logStd"
 )
 for line in "${magSimus1CommandLines[@]}"
 	do
@@ -41,7 +41,7 @@ done
 ##	Check the quality of PhylDiag sbs using magSimus 1 #
 ########################################################
 phylDiagUsingMagSimus1CommandLines=(
-"src/magSimus1.py res/speciesTree.phylTree -out:genomeFiles=res/simu1/genes.%s.list.bz2 -out:ancGenesFiles=res/simu1/ancGenes.%s.list.bz2 -userRatesFile=data/specRates_MS1.v84 +breakpointAnalyzer -out:empiricalSbsAsGenomes=res/simu1/sbs.genes.%s.%s.list.bz2 > res/simu1/logStdout"
+"src/magSimus1.py data/speciesTree.phylTree -out:genomeFiles=res/simu1/genes.%s.list.bz2 -out:ancGenesFiles=res/simu1/ancGenes.%s.list.bz2 -userRatesFile=data/specRates_MS1.v84 +breakpointAnalyzer -out:empiricalSbsAsGenomes=res/simu1/sbs.genes.%s.%s.list.bz2 > res/simu1/logStdout"
 "src/analysis/comparePhylDiagSbsToSimulatedSbs.py data/speciesTree.phylTree Mus.musculus Gallus.gallus Amniota"
 )
 for line in "${phylDiagUsingMagSimus1CommandLines[@]}"
