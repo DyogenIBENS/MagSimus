@@ -668,9 +668,9 @@ def createStartGenome(arguments, iniAncestorName):
         # The initial genome is filled [Chr_0,..., Chr_{N-1}] with
         # Chr_0 = [(0,+-1), ..., ((nbGenesChr_0-1),+-1)],
         # the Chr_1 = [(nbGenesChr_0, +-1), ..., (nbGenesChr_1, +-1)]
-        genome[str(i)] = []
+        genome[str(i+1)] = []
         for x in range(nb):
-            genome[str(i)].append(OGene(iniAncestorName[:2] + '_' + str(i) + '_'+ str(x + 1), myEvolutionProbas.randomStrand()))
+            genome[str(i+1)].append(OGene(iniAncestorName[:2] + '_' + str(i+1) + '_'+ str(x + 1), myEvolutionProbas.randomStrand()))
     lowerCap = arguments['chr:lengthLowerCap']
     upperCap = arguments['chr:lengthUpperCap']
     if not all([lowerCap <= chromLen <= upperCap for chromLen in chromLens]):
