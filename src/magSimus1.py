@@ -683,6 +683,12 @@ def createStartGenome(arguments, iniAncestorName):
 
 def launch(arguments):
     arguments = myMagSimusTools.readParameterFile(arguments)
+    if len(arguments["seed"]) > 0:
+        random.seed(eval(arguments["seed"]))
+        import numpy as np
+        np.random.seed(eval(arguments["seed"]))
+        print >> sys.stderr, "Random number generator internal state initialised from arguments"
+
     myTools.printArguments(arguments, sys.stderr)
     # Check if mean for vonMises distribution was well chosen:
     if arguments["chr:invDist"].lower() == 'vonMises' and arguments["chr:invDistMean"] + 0.5 > 1:
